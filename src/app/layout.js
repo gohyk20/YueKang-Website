@@ -9,6 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/Gloves-hit.png" as="image" />
+      </head>
       <body className={`${kirang.className} bg-primary overflow-hidden flex flex-col relative`}>{children}</body>
     </html>
   )

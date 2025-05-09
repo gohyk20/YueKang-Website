@@ -143,12 +143,12 @@ export default function Home({layer, bringToFront, musicLayer}) {
 
   function handleWindowClick(e){
     setHidden(!hidden);
-    if(!hidden) bringToFront("Me");
+    bringToFront("Me");
   }
 
   function handleMusicClick(e){
     setMusicHidden(!musicHidden);
-    if(!musicHidden) bringToFront("Music");
+    bringToFront("Music");
   }
 
   return (

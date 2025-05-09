@@ -9,14 +9,19 @@ export default function Topnav({files}){
     const [layers, setLayers] = useState({"Me": 1, "About": 2, "Notes": 3, "Music": 4});
 
     function bringToFront(id) {
-        const newLayers = {};
+        console.log("clicked", id, "moving to front");
+        const newLayers = {...layers};
         newLayers[id] = 4; //bring clicked window to front
+        console.log(newLayers);
         for (const key in layers){
             if (key != id && layers[key] > layers[id]){
+                console.log("lowering ", key)
                 newLayers[key] = layers[key] - 1; //lower layers of windows above clicked
             }
         }
+        console.log(newLayers);
         setLayers(newLayers);
+        
     }
 
     return(
