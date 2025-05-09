@@ -9,7 +9,7 @@ function Links({files}){
         <div className="flex flex-col font-lg text-xl">
             {files.map((file, idx)=>
                 <button key={idx} className="p-2 hover:bg-accent rounded-lg">
-                    <Link href={`/${file}`}>
+                    <Link href={`/Notes/${file}`}>
                         {file}
                     </Link>
                 </button>
