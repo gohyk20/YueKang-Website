@@ -9,7 +9,7 @@ export default function About({layer, bringToFront}){
 
     function handleWindowClick(e){
         setHidden(!hidden);
-        if(!hidden) bringToFront(e.currentTarget.id);
+        if(!hidden) bringToFront("About");
       }
 
     const age = new Date().getFullYear() - 2006;

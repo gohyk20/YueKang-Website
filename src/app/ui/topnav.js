@@ -6,7 +6,7 @@ import Notes from '@/app/ui/notes';
 import {useState} from 'react';
 
 export default function Topnav({files}){
-    const [layers, setLayers] = useState({"Me": 2, "About": 1, "Notes": 3, "Music": 4});
+    const [layers, setLayers] = useState({"Me": 1, "About": 2, "Notes": 3, "Music": 4});
 
     function bringToFront(id) {
         const newLayers = {};

@@ -8,7 +8,7 @@ export default async function page({params}){
     let {page} = await params; //get the page from params
     page = page.replace("%20", " ");
     console.log(page);
-    const content = await fs.readFile(`src/app/content/${page}`);
+    const content = await fs.readFile(`public/content/${page}`);
     const htmlContent = (await remark().use(html).process(content)).toString(); //convert using remark + remark-html
 
     return(
