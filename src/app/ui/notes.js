@@ -23,7 +23,7 @@ export default function Notes({files, layer, bringToFront}){
 
     function handleWindowClick(e){
         setHidden(!hidden);
-        if(!hidden) bringToFront("Notes");
+        bringToFront("Notes");
       }
 
     return(
