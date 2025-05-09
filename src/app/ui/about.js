@@ -23,7 +23,7 @@ export default function About({layer, bringToFront}){
                     <p>I am {age} years old, living in Singapore. <br/>
                     Killing time by working on small projects.</p>
                     <div className="flex gap-4">
-                        <a href="https://www.linkedin.com/in/yue-kang-goh-92561525a/" className="flex gap-2 hover:bg-accent p-2 rounded-xl"><Image src="/inBug-Black.png" width={20} height={20} alt="linkedin icon"/>LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/yue-kang-goh-92561525a/" className="flex gap-2 hover:bg-accent p-2 rounded-xl"><Image src="/InBug-Black.png" width={20} height={20} alt="linkedin icon"/>LinkedIn</a>
                         <a href="https://github.com/gohyk20" className="flex gap-2 hover:bg-accent p-2 rounded-xl"><Image src="/github-mark.svg" width={20} height={20} alt="github icon"/>GitHub</a>
                     </div>
                     <br/>
