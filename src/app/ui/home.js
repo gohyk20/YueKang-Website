@@ -105,9 +105,9 @@ function MusicPlayer({musicHidden}){
       {!musicHidden && audioElement}
       <div className="relative w-full">
         <Image src={songs[songID].thumbnail} alt="music thumbnail" width={200} height={200}/>
-        <div className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-70 bg-dark flex-col justify-center items-center text-white text-md p-2">
+        <div className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-70 bg-dark flex-col justify-center items-center text-white text-md p-2 text-wrap">
           {songs[songID].text.split("\n").map((line, idx)=>
-            <p key={idx} className="grow">{line}</p>)}
+            <p key={idx}>{line}</p>)}
         </div>
       </div>
       <div className="w-full bg-light flex justify-center gap-3">

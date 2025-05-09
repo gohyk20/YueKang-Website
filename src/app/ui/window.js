@@ -20,7 +20,7 @@ export default function Window({children, hidden, handleClose, title, layer, bri
 
     useLayoutEffect(()=>{
         const rect = windowRef.current.getBoundingClientRect(); //get the size of window
-        console.log(rect.width, rect.height);
+        //console.log(rect.width, rect.height);
         const x = (window.innerWidth - rect.width)/2;
         const y = (window.innerHeight - rect.height)/2;
         setPos({x:x,y:y});
