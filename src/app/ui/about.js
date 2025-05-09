@@ -27,7 +27,7 @@ export default function About({layer, bringToFront}){
                         <a href="https://github.com/gohyk20" className="flex gap-2 hover:bg-accent p-2 rounded-xl"><Image src="/github-mark.svg" width={20} height={20} alt="github icon"/>GitHub</a>
                     </div>
                     <br/>
-                    <h1 className="font-bold text-xl">Things I've done...</h1>
+                    <h1 className="font-bold text-xl">Things I&#39;ve done...</h1>
                     <div className="p-2">
                         <h2><a href="https://hahah9662.itch.io/snakebit-roadd" className="hover:bg-accent p-1 rounded">Snakebit Road (2025)</a></h2>
                         <p className="p-1">A game I made for a game jam in about a month. <br/>

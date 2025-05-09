@@ -10,7 +10,7 @@ import {MdPlayArrow, MdPause, MdNavigateBefore, MdNavigateNext} from 'react-icon
 function Title(){
   return(
     <div className="mb-[6%]">
-      <h1 className="text-7xl medium p-2">Hi, I'm Yue Kang</h1>
+      <h1 className="text-7xl medium p-2">Hi, I&#39;m Yue Kang</h1>
       <p className="text-lg p-2">Dying one second at a time, also working at kfc</p>
     </div>
   );
