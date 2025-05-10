@@ -15,11 +15,12 @@ export default async function page({params}){
         const htmlContent = (await remark().use(html).process(content)).toString(); //convert using remark + remark-html
 
         return(
-            <div>
+            <div className="flex flex-col min-h-screen justify-center">
                 <div className="flex justify-left p-5 sticky"><Link href="/" className="p-1"><IoMdHome size={45}/></Link></div>
-                <div className="grow flex justify-center prose-lg bg-primary h-screen p-2 overflow-auto">
-                    <div className="text-left w-[35%]" dangerouslySetInnerHTML={{__html:htmlContent}}/>
+                <div className="grow flex justify-center prose-lg bg-primary p-5 overflow-auto">
+                    <div className="text-left md:w-[35%] w-full text-wrap" dangerouslySetInnerHTML={{__html:htmlContent}}/>
                 </div>
+                <div className="p-5 flex justify-left">Goh Yue Kang (2025)</div>
             </div>
         );
     }catch(err){
