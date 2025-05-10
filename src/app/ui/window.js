@@ -52,7 +52,7 @@ export default function Window({children, hidden, handleClose, title, layer, bri
     }
 
     const handleTouchStart = (e)=>{
-        bringToFront(e);
+        bringToFront(e.currentTarget.id);
         const touch = e.touches[0];
         offset.current = {
             x: touch.clientX - pos.x,

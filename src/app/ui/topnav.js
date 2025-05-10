@@ -21,7 +21,6 @@ export default function Topnav({files}){
         }
         console.log(newLayers);
         setLayers(newLayers);
-        
     }
 
     return(

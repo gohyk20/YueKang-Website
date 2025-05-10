@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preload" href="/Gloves-hit.png" as="image" />
       </head>
-      <body className={`${kirang.className} bg-primary overflow-hidden flex flex-col relative`}>{children}</body>
+      <body className={`${kirang.className} bg-primary overflow-hidden flex flex-col relative h-screen overflow-x-hidden`}>{children}</body>
     </html>
   )
 }
